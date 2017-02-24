@@ -3,10 +3,11 @@
 @import "global/mixins.scss";
 
 @import "blocks/header-top.scss";
+@import "blocks/menu.scss";
 
 body {
-  width: 940px;
-  background-color: red;
+  min-width: 940px;
+  background-color: green;
   color: #242424;
   margin: 0px;
   padding: 0px;
@@ -20,8 +21,4 @@ body {
 
 img{
   display: block;
-}
-
-.wrapper {
-  @include container();
 }

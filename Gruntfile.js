@@ -15,7 +15,6 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: [
-            "fonts/**/*.{woff,woff2}",
             "img/**",
             "js/**",
             "*.html"
@@ -71,6 +70,15 @@ module.exports = function(grunt) {
       }
     },
 
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src: ["build/img/*.svg"]
+        }]
+      }
+    },
+
     imagemin: {
       images: {
         options: {
@@ -117,6 +125,7 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
+    "svgmin",
     "imagemin"
   ]);
 
