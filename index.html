@@ -3,61 +3,71 @@
   <head>
     <meta charset="utf-8">
     <title>Fooseshoes</title>
-    <link href="" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="wrapper">
-        <div class="header-top">
+      <div class="header__top">
+        <div class="header__wrapper">
           <div class="logo">
             <a class="logo__link" href="#"><img src="img/logo.png" alt="Fooseshoes" width="160" height="26"></a>
           </div>
-          <div class="search">Login or register</div>
+          <form class="search">
+            <input class="search__entry" type="text" placeholder="Искать здесь...">
+            <button class="search__btn" type="submit"></button>
+          </form>
+          <div class="user-block">
+            <a class="user-block__link" href="#">Login or register</a>
+          </div>
         </div>
-        <div class="header-bottom"></div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__wrapper">
           <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item menu__item--active">
-                  <a class="menu__link menu__link--active">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="catalog.html">Products</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">About</a>
-                </li>
-                <li class="menu__item"v>
-                  <a class="menu__link" href="#">Pages</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Blog</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Contact</a>
-                </li>
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a class="menu__link menu__link--active">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">Products</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item"v>
+                <a class="menu__link" href="#">Pages</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
             </ul>
           </nav>
-          <div class="user-block">
-            <div class="user-block__like"></div>
-            <div class="user-block__basket"></div>
-          </div>
+          <div class="header__like">Like</div>
+          <div class="header__basket">Basket</div>
+        </div>
       </div>
     </header>
     <div class="promo">
+      <div class="wrapper">
       <div class="promo-page">
         <div class="promo-page__price">$145.99</div>
         <h1 class="promo-page__title">Pink Shoes 2013 Collection</h1>
         <p class="promo-page__description">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
         <div class="promo-page__btns">
-          <a class="promo-page__btn"  href="#">a</a>
-          <a class="promo-page__btn" href="#">b</a>
-          <a class="promo-page__btn" href="#">c</a>
-          <a class="promo-page__btn" href="#">d</a>
+          <a class="promo-page__btn" href="#">1</a>
+          <a class="promo-page__btn" href="#">2</a>
+          <a class="promo-page__btn" href="#">3</a>
+          <a class="promo-page__btn" href="#">4</a>
         </div>
       </div>
     </div>
+    </div>
     <div class="product-categories">
+      <div class="wrapper">
       <div class="collection">
         <div class="collection__item">
           <h3 class="collection__title">Pink Shoes</h2>
@@ -80,7 +90,9 @@
           <p class="collection__description">Free delivery</p>
         </div>
       </div>
+    </div>
       <div class="offers">
+        <div class="wrapper">
         <div class="offers__item">
           <img class="offers__img" src="" alt="sale" width="" height="">
           <div class="offers__name">
@@ -99,6 +111,7 @@
             <h2 class="offers__title">Must have</h2>
           </div>
         </div>
+      </div>
       </div>
     </div>
     <div class="catalog">

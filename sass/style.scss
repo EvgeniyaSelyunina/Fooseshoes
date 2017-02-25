@@ -2,23 +2,36 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 
-@import "blocks/header-top.scss";
+@import "blocks/header.scss";
 @import "blocks/menu.scss";
+@import "blocks/promo.scss";
+@import "blocks/logo.scss";
+@import "blocks/search.scss";
+@import "blocks/user-block.scss";
+@import "blocks/promo-page.scss";
+@import "blocks/product-categories.scss";
+@import "blocks/collection.scss";
+@import "blocks/offers.scss";
 
 body {
-  min-width: 940px;
-  background-color: green;
-  color: #242424;
+  width: 100%;
+  background-color: #ebe7df;
+  color: #333333;
   margin: 0px;
   padding: 0px;
-  font-family: "Allerta", Arial, sans-serif;
+  font-family: "Aller", Arial, sans-serif;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 25px;
   font-style: normal;
-  text-transform: uppercase;
   text-align: center;
 }
 
 img{
   display: block;
+}
+
+.wrapper{
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
 }

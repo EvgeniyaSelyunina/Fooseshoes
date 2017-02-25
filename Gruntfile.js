@@ -17,6 +17,7 @@ module.exports = function(grunt) {
           src: [
             "img/**",
             "js/**",
+            "*.php",
             "*.html"
           ],
           dest: "build"
@@ -43,11 +44,11 @@ module.exports = function(grunt) {
       options: {
         processors: [
           require("autoprefixer")({browsers: [
-            "last 1 version",
-            "last 2 Chrome versions",
-            "last 2 Firefox versions",
-            "last 2 Opera versions",
-            "last 2 Edge versions"
+            "last 3 version",
+            "last 3 Chrome versions",
+            "last 3 Firefox versions",
+            "last 3 Opera versions",
+            "last 3 Edge versions"
           ]}),
           require("css-mqpacker")({
             sort: true
@@ -94,7 +95,9 @@ module.exports = function(grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: ["build/*.html", "build/css/*.css"]
+          src: [
+            "build/*.html",
+            "build/css/*.css"]
         },
         options: {
           server: "./build",
@@ -109,11 +112,11 @@ module.exports = function(grunt) {
     watch: {
       html: {
         files: ["*.html"],
-        tasks: ["copy:html"]
+        tasks: ["copy:html"],
       },
       style: {
         files: ["sass/**/*.{scss,sass}"],
-        tasks: ["sass", "postcss", "csso"]
+        tasks: ["sass", "postcss", "csso"],
       }
     }
   });

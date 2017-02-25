@@ -1,0 +1,41 @@
+.promo-page {
+  width: 460px;
+  text-align: left;
+  padding: 70px 0px 90px 510px;
+}
+
+.promo-page__price{
+  width: 70px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #57c5a0;
+  color: #ffffff;
+  text-align: center;
+  padding: 22px 0px;
+}
+
+.promo-page__title {
+  font-size: 40px;
+  line-height: 40px;
+  padding-right: 120px;
+  margin: 10px 0px;
+}
+
+.promo-page__description {
+  font-size: 20px;
+  line-height: 25px;
+  margin: 10px 0px;
+  padding-right: 70px;
+}
+
+.promo-page__btns{
+  width: 192px;
+}
+
+.promo-page__btn{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 0px;
+  background-color: #ffffff;
+}
