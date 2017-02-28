@@ -12,14 +12,55 @@
   justify-content: space-between;
 }
 
-.header__top{
+.header__top {
   height: 45px;
   background-color: #242424;
   display: flex;
   justify-content: space-between;
 }
 
-.header__bottom{
+.header__bottom {
   background-color: #ffffff;
-  padding: 23px 0px;
+}
+
+.header__select {
+  min-width: 180px;
+}
+
+.header__select-icon {
+  display: inline-block;
+  padding: 20px 25px 20px 58px;
+  border-left: 1px solid #eeeeee;
+    &:last-child{
+    border-right: 1px solid #eeeeee;
+    }
+}
+
+.header__select-like,
+.header__select-basket {
+  color: #ffffff;
+  margin: 21px 0px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.header__select-like{
+  background-color: #adadad;
+  position: relative;
+  &--like{
+    position: relative;
+    &::before {
+    content: "";
+    position: absolute;
+
+    content: url("../img/star_icon.png");
+  }
+}
+}
+
+.header__select-basket{
+  background-color: #57c5a0;
+  padding: 5px 8px;
 }

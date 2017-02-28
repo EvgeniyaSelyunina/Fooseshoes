@@ -13,12 +13,12 @@
           <div class="logo">
             <a class="logo__link" href="#"><img src="img/logo.png" alt="Fooseshoes" width="160" height="26"></a>
           </div>
-          <form class="search">
-            <input class="search__entry" type="text" placeholder="Искать здесь...">
+          <form class="search" action="" method="get">
+            <input class="search__entry" type="search" placeholder="Искать здесь...">
             <button class="search__btn" type="submit"></button>
           </form>
           <div class="user-block">
-            <a class="user-block__link" href="#">Login or register</a>
+            <a class="user-block__link" href="#">LOGIN or REGISTER</a>
           </div>
         </div>
       </div>
@@ -46,8 +46,14 @@
               </li>
             </ul>
           </nav>
-          <div class="header__like">Like</div>
-          <div class="header__basket">Basket</div>
+          <div class="header__select">
+            <div class="header__select-icon">
+              <a class="header__select-like" href="#">30</a>
+            </div>
+            <div class="header__select-icon">
+              <a class="header__select-basket" href="#">0</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -68,50 +74,47 @@
     </div>
     <div class="product-categories">
       <div class="wrapper">
-      <div class="collection">
-        <div class="collection__item">
-          <h3 class="collection__title">Pink Shoes</h2>
-          <p class="collection__description">Now af $145.99</p>
-        </div>
-        <div class="collection__item">
-          <h3 class="collection__title">Anna Field</h2>
-          <p class="collection__description">Limited Edition</p>
-        </div>
-        <div class="collection__item">
-          <h3 class="collection__title">Prada</h2>
-          <p class="collection__description">Summer is coming</p>
-        </div>
-        <div class="collection__item">
-          <h3 class="collection__title">Casadei</h2>
-          <p class="collection__description">All colors avaiable</p>
-        </div>
-        <div class="collection__item">
-          <h3 class="collection__title">Mellow Yellow</h2>
-          <p class="collection__description">Free delivery</p>
-        </div>
+        <nav class="collection">
+          <ul class="collection__list">
+            <li class="collection__item collection__item--active">
+              <a class="collection__link collection__link--active">Pink Shoes<br><span class="collection__description collection__description--active">Now af $145.99<span></a>
+            </li>
+            <li class="collection__item">
+              <a class="collection__link">Anna Field<br><span class="collection__description">Limited Edition<span></a>
+            </li>
+            <li class="collection__item">
+              <a class="collection__link">Prada<br><span class="collection__description">Summer is coming<span></a>
+            </li>
+            <li class="collection__item">
+              <a class="collection__link">Casadei<br><span class="collection__description">All colors avaiable<span></a>
+            </li>
+            <li class="collection__item">
+              <a class="collection__link">Mellow Yellow<br><span class="collection__description">Free delivery<span></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
       <div class="offers">
         <div class="wrapper">
-        <div class="offers__item">
-          <img class="offers__img" src="" alt="sale" width="" height="">
-          <div class="offers__name">
-            <h2 class="offers__title">On sale</h2>
+          <div class="offers__item">
+            <img class="offers__img" src="img/sale.jpg" alt="sale" width="300" height="180">
+            <div class="offers__name">
+              <a class="offers__title" href="#">On sale</a>
+            </div>
+          </div>
+          <div class="offers__item">
+            <img class="offers__img" src="img/special.jpg" alt="special" width="300" height="180">
+            <div class="offers__name">
+              <a class="offers__title" href="#">Special offers</a>
+            </div>
+          </div>
+          <div class="offers__item">
+            <img class="offers__img" src="img/must.jpg" alt="must" width="300" height="180">
+            <div class="offers__name">
+              <a class="offers__title" href="#">Must have</a>
+            </div>
           </div>
         </div>
-        <div class="offers__item">
-          <img class="offers__img" src="" alt="offers" width="" height="">
-          <div class="offers__name">
-            <h2 class="offers__title">Special offers</h2>
-          </div>
-        </div>
-        <div class="offers__item">
-          <img class="offers__img" src="" alt="must" width="" height="">
-          <div class="offers__name">
-            <h2 class="offers__title">Must have</h2>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
     <div class="catalog">
