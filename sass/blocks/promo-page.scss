@@ -2,6 +2,14 @@
   width: 460px;
   text-align: left;
   padding: 70px 0px 90px 510px;
+  &--other{
+    width: 500px;
+  }
+}
+
+.promo-page__line{
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-page__price{
@@ -29,13 +37,23 @@
 }
 
 .promo-page__btns{
-  width: 192px;
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-page__btn{
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  font-size: 0px;
+  position: relative;
+  width: 45px;
+  height: 45px;
   background-color: #ffffff;
+  position: relative;
+  font-size: 0;
+}
+
+.promo-page__img{
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
 }

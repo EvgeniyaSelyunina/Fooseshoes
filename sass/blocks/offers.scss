@@ -1,11 +1,37 @@
-.offers{
+.offers {
   background-color: #242424;
 }
 
-.offers__item{
+.offers__item {
+  display:inline-block;
+  position: relative;
   padding: 25px 0px;
 }
 
-.offers__img{
+.offers__img {
   width: 300px;
+  display: block;
+  border: none;
+}
+
+.offers__name {
+  position: absolute;
+  display: block;
+  background-color: #393939;
+  opacity: 0.9;
+  min-width: 180px;
+  top: 84px;
+  left: 60px;
+  &--long{
+    left: 20px;  
+  }
+}
+
+.offers__title {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 60px;
+  text-transform: uppercase;
+  padding: 0px 24px;
 }

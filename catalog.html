@@ -8,46 +8,61 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper">
-        <div class="header-top">
+      <div class="header__top">
+        <div class="header__wrapper">
           <div class="logo">
-            <a class="logo__link" href="index.html"><img src="img/logo.png" alt="Fooseshoes" width="160" height="26"></a>
+            <a class="logo__link" href="#"><img src="img/logo.png" alt="Fooseshoes" width="160" height="26"></a>
           </div>
-          <div class="search">Login or register</div>
+          <form class="search" action="" method="get">
+            <input class="search__entry" type="search" placeholder="Искать здесь...">
+            <button class="search__btn" type="submit"></button>
+          </form>
+          <div class="user-block">
+            <a class="user-block__link" href="#">LOGIN or REGISTER</a>
+          </div>
         </div>
-        <div class="header-bottom"></div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__wrapper">
           <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="index.html">Home</a>
-                </li>
-                <li class="menu__item menu__item--active">
-                  <a class="menu__link menu__link--active">Products</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">About</a>
-                </li>
-                <li class="menu__item"v>
-                  <a class="menu__link" href="#">Pages</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Blog</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Contact</a>
-                </li>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Home</a>
+              </li>
+              <li class="menu__item menu__item--active">
+                <a class="menu__link menu__link--active" href="catalog.html">Products</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item"v>
+                <a class="menu__link" href="#">Pages</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
             </ul>
           </nav>
-          <div class="user-block">
-            <div class="user-block__like"></div>
-            <div class="user-block__basket"></div>
+          <div class="header__select">
+            <div class="header__select-icon">
+              <a class="header__select-like" href="#">30</a>
+            </div>
+            <div class="header__select-icon">
+              <a class="header__select-basket" href="#">0</a>
+            </div>
           </div>
+        </div>
       </div>
     </header>
     <div class="promo">
-      <div class="promo-page">
-        <div class="promo-page__price">$145.99</div>
-        <h1 class="promo-page__title">Pink Shoes 2013 Collection</h1>
+      <div class="promo-page promo-page--other">
+        <div class="promo-page__line">
+          <div class="promo-page__price">$145.99</div>
+          <h1 class="promo-page__title">Pink Shoes<br>2013 Collection</h1>
+        </div>
         <p class="promo-page__description">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
       </div>
     </div>

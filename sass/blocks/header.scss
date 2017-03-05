@@ -36,6 +36,11 @@
     }
 }
 
+.header__icon-like,
+.header__icon-basket{
+  display: inline-block;
+}
+
 .header__select-like,
 .header__select-basket {
   color: #ffffff;

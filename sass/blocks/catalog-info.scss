@@ -1,0 +1,25 @@
+.catalog-info{
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.catalog-info__delivery,
+.catalog-info__reviews{
+  width: 195px;
+  padding: 20px 25px 25px 15px;
+  background-color: #dfdbd4;
+}
+
+.catalog-info__news{
+  width: 410px;
+  padding: 20px 30px 0px 15px;
+  background-color: #dfdbd4;
+}
+
+.catalog-info__title{
+   text-transform: uppercase;
+}
+
+.catalog-info__headline{
+   font-weight: bold;
+}

@@ -1,0 +1,22 @@
+.widget{
+  width: 260px;
+  text-align: left;
+}
+
+.widget__title{
+  text-transform: uppercase;
+  color: #6b6b6b;
+  font-size: 14px;
+  line-height: 18px;
+  &--flickr{
+    padding-bottom: 21px;
+  }
+}
+
+.widget__link{
+  color: #54ba98;
+}
+
+.widget__data{
+  padding-top: -10px;
+}
