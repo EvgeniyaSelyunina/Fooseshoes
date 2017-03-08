@@ -54,18 +54,30 @@
 .header__select-like{
   background-color: #adadad;
   position: relative;
-  &--like{
-    position: relative;
     &::before {
-    content: "";
-    position: absolute;
-
-    content: url("../img/star_icon.png");
-  }
-}
+      position: absolute;
+      content: "";
+      display: block;
+      background: url("../img/star_icon.png");
+      width: 16px;
+      height: 16px;
+      top:4px;
+      left:-26px;
+     }
 }
 
 .header__select-basket{
   background-color: #57c5a0;
   padding: 5px 8px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: url("../img/cart_icon_two.png");
+    width: 16px;
+    height: 13px;
+    top:8px;
+    left:-27px;
+   }
 }

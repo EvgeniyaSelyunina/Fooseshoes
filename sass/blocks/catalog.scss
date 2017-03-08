@@ -32,12 +32,23 @@
 
 .catalog-list__items{
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: top;
     &--line{
       padding-bottom: 45px;
       border-bottom: 1px solid #bcb5a7;
     }
+    &--row{
+      flex-flow: row wrap;
+    }
+}
+
+.catalog-list__item{
+  width: 302px;
+  &--indent{
+    margin-bottom: 30px;
+  }
 }
 
 .catalog-list__photo {

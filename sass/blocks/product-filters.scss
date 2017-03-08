@@ -1,0 +1,59 @@
+.product-filters {
+  height: 90px;
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+.product-filters__title {
+  padding: 31px 0px 0px 60px;
+  font-size: 22px;
+}
+
+.product-filters__menu {
+  display: block;
+}
+
+.product-filters__list{
+  padding: 0px;
+  list-style: none;
+}
+
+.product-filters__item{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  width: 220px;
+  background-color: #242424;
+  padding: 18px 0px;
+  margin-left: 18px;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background: url("../img/arrow_icon.png");
+    width: 14px;
+    height: 14px;
+    font-size: 24px;
+    top:23px;
+    left:185px;
+  }
+}
+
+.product-filters__link{
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 63px;
+}
+
+.product-filters__child{
+  display: block;
+  min-width: 220px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #242424;
+}
