@@ -8,13 +8,12 @@
   }
 }
 
-.promo-page__line{
-  display: flex;
-  justify-content: space-between;
+.promo-page__line {
+  @include flex();
   align-items: center;
 }
 
-.promo-page__price{
+.promo-page__price {
   width: 70px;
   font-size: 13px;
   font-weight: bold;
@@ -29,7 +28,7 @@
   line-height: 40px;
   padding-right: 120px;
   margin: 10px 0px;
-  &--other{
+  &--other {
     padding: 0px 20px 0px 15px;
     margin: 0px;
   }
@@ -45,13 +44,12 @@
   }
 }
 
-.promo-page__btns{
+.promo-page__btns {
   width: 190px;
-  display: flex;
-  justify-content: space-between;
+  @include flex();
 }
 
-.promo-page__btn{
+.promo-page__btn {
   position: relative;
   width: 45px;
   height: 45px;
@@ -60,7 +58,7 @@
   font-size: 0;
 }
 
-.promo-page__img{
+.promo-page__img {
   transform: translateX(-50%) translateY(-50%);
   left: 50%;
   top: 50%;

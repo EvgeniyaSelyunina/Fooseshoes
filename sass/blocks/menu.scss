@@ -1,15 +1,15 @@
-.menu{
+.menu {
   width: 580px;
   background-color: #ffffff;
   font-weight: bold;
 }
 
-.menu__item{
+.menu__item {
   border-left: 1px solid #eeeeee;
   height: 65px;
 }
 
-.menu__item:last-child{
+.menu__item:last-child {
   border-right: 1px solid #eeeeee;
   height: 65px;
   padding-right: 27px;
@@ -25,11 +25,14 @@
   justify-content: space-between;
 }
 
-.menu__link{
+.menu__link {
   display: inline-block;
   color: #242424;
   font-size: 14px;
   text-decoration: none;
   padding: 20px 0px;
   padding-left: 27px;
+  &:hover {
+    color: #57c5a0;
+  }
 }

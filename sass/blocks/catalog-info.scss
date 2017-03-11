@@ -1,25 +1,61 @@
-.catalog-info{
+.catalog-info {
   text-align: left;
   margin-bottom: 30px;
 }
 
 .catalog-info__delivery,
-.catalog-info__reviews{
-  width: 195px;
-  padding: 20px 25px 25px 15px;
+.catalog-info__reviews {
+  width: 191px;
+  padding: 25px 23px 20px 18px;
   background-color: #dfdbd4;
 }
 
-.catalog-info__news{
+.catalog-info__news {
   width: 410px;
-  padding: 20px 30px 0px 15px;
+  padding: 25px 30px 20px 18px;
   background-color: #dfdbd4;
 }
 
-.catalog-info__title{
-   text-transform: uppercase;
+.catalog-info__title {
+  text-transform: uppercase;
+  margin: 0px;
 }
 
-.catalog-info__headline{
-   font-weight: bold;
+.catalog-info__item {
+  position: relative;
+}
+
+.catalog-info__text {
+  line-height: 16px;
+  margin: 0px;
+  margin: 5px 0px;
+    &--left{
+    padding-left: 55px;
+    margin: 0px;
+    margin-bottom: 10px;
+    }
+}
+
+.catalog-info__data {
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 31px;
+  line-height: 12px;
+  top: 5px;
+  left: 5px;
+  background-color: #57c5a0;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 6px;
+  font-weight: bold;
+}
+
+.catalog-info__headline {
+  font-weight: bold;
+  padding-left: 55px;
+}
+
+.catalog-info__author {
+  font-style: italic;
 }

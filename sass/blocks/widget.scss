@@ -1,22 +1,39 @@
-.widget{
+.widget {
   width: 260px;
   text-align: left;
+  &--text {
+    margin-left: 40px;
+  }
+  &--flickr {
+    margin-right: 25px;
+  }
 }
 
-.widget__title{
+.widget__title {
   text-transform: uppercase;
   color: #6b6b6b;
   font-size: 14px;
-  line-height: 18px;
-  &--flickr{
+  line-height: $middle-line-height;
+  &--flickr {
     padding-bottom: 21px;
   }
 }
 
-.widget__link{
-  color: #54ba98;
+.widget__text {
+  line-height: $middle-line-height;
 }
 
-.widget__data{
+.widget__message {
+  line-height: $middle-line-height;
+  margin-bottom: 4px;
+}
+
+.widget__link {
+  color: #54ba98;
+  line-height: $middle-line-height;
+}
+
+.widget__data {
   padding-top: -10px;
+  font-style: italic;
 }

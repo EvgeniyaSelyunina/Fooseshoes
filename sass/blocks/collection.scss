@@ -6,7 +6,7 @@
 }
 .collection__item {
   position: relative;
-  &--active::before{
+  &--active::before {
     content: "";
     position: absolute;
     width: 165px;
