@@ -55,6 +55,9 @@
   &--active{
     color: #ffffff;
   }
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 .collection__link:last-child {
@@ -65,6 +68,9 @@
   color: #6e6e6e;
   font-size: 12px;
   &--active{
+    color: #adadad;
+  }
+  &:hover {
     color: #adadad;
   }
 }

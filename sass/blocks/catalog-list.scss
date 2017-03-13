@@ -72,7 +72,7 @@
   font-size: 18px;
   padding-top: 12px;
   text-align: left;
-  padding-left: 90px;
+  padding-left: 93px;
 }
 
 .catalog-list__link {
@@ -140,6 +140,11 @@
   top: -17px;
   left: 10px;
   padding: 21px 0px;
+  transition: all .3s ease;
+  &:hover {
+    padding: 25px 4px;
+    font-size: 15px;
+  }
 }
 
 .catalog-list__sticker {
@@ -152,9 +157,17 @@
   top: 0px;
   left: 217px;
   padding: 21px 0px;
+  transition: all .3s ease;
     &--stock {
       background-color: #f27e4b;
       padding: 9px 0px;
+      &:hover {
+        font-size: 15px;
+      }
+    }
+    &:hover {
+      padding: 27px 6px;
+      font-size: 15px;
     }
 }
 

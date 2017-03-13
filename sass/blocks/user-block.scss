@@ -8,4 +8,7 @@
 .user-block__link {
   color: #7e7e7e;
   text-decoration: none;
+  &:hover {
+    color: $green;
+  }
 }

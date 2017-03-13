@@ -56,6 +56,14 @@
   padding-left: 55px;
 }
 
+.catalog-info__link {
+  text-decoration: none;
+  color: #242424;
+  &:hover {
+    color: $green;
+  }
+}
+
 .catalog-info__author {
   font-style: italic;
 }

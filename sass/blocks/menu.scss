@@ -26,13 +26,22 @@
 }
 
 .menu__link {
+  position: relative;
   display: inline-block;
   color: #242424;
   font-size: 14px;
   text-decoration: none;
-  padding: 20px 0px;
-  padding-left: 27px;
+  padding-top: 20px;
+  margin-left: 27px;
+  transition: all .1s ease;
   &:hover {
-    color: #57c5a0;
+    color: $green;
+    border-bottom: 2px solid $green;
+  }
+  &--active {
+    &:hover{
+      color: $dark;
+    }
+    border-bottom: 2px solid $green;
   }
 }

@@ -1,4 +1,5 @@
 .promo-page {
+  position: relative;
   width: 460px;
   text-align: left;
   padding: 70px 0px 90px 510px;
@@ -14,6 +15,7 @@
 }
 
 .promo-page__price {
+  position: absolute;
   width: 70px;
   font-size: 13px;
   font-weight: bold;
@@ -21,6 +23,11 @@
   color: #ffffff;
   text-align: center;
   padding: 22px 0px;
+  transition: all .3s ease;
+  &:hover {
+    padding: 26px 6px;
+    font-size: 15px;
+  }
 }
 
 .promo-page__title {
@@ -28,8 +35,9 @@
   line-height: 40px;
   padding-right: 120px;
   margin: 10px 0px;
+  margin-top: 82px;
   &--other {
-    padding: 0px 20px 0px 15px;
+    padding: 0px 20px 0px 88px;
     margin: 0px;
   }
 }
@@ -40,7 +48,7 @@
   margin: 10px 0px;
   padding-right: 70px;
   &--other {
-    padding-right: 15px;
+    padding-right: 5px;
   }
 }
 

@@ -25,6 +25,10 @@
   &--long {
     left: 20px;
   }
+  &:hover {
+    background-color: #ebe7df;
+    opacity: 0.8;
+  }
 }
 
 .offers__title {
@@ -34,4 +38,8 @@
   line-height: 60px;
   text-transform: uppercase;
   padding: 0px 24px;
+  &:hover {
+    color: #2e2e2e;
+    opacity: 0.8;
+  }
 }

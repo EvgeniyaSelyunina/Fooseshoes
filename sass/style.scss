@@ -1,6 +1,7 @@
 @import "global/normalize.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
+@import "global/fonts.scss";
 
 @import "blocks/header.scss";
 @import "blocks/menu.scss";
@@ -30,18 +31,18 @@ body {
   color: #333333;
   margin: 0px;
   padding: 0px;
-  font-family: "Aller", Arial, sans-serif;
+  font-family: "Aller Regular", Arial, sans-serif;
   font-size: 12px;
   line-height: 25px;
   font-style: normal;
   text-align: center;
 }
 
-img{
+img {
   display: block;
 }
 
-.wrapper{
+.wrapper {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;

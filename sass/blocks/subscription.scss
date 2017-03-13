@@ -38,6 +38,9 @@
     top:12px;
     left:12px;
   }
+  &:hover {
+    background-color: #dfdbd4;
+  }
 }
 
 .subscription__social-networks {
@@ -52,6 +55,9 @@
   position: relative;
   background-color: #2e2e2e;
   font-size: 0;
+  &:hover {
+    background-color: #dfdbd4;
+  }
 }
 
 .subscription__img {
