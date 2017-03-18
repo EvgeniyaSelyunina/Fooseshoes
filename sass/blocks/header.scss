@@ -1,20 +1,32 @@
 .header {
+  position: relative;
+  height: 140px;
   background-color: #ffffff;
-  height: 105px;
-  padding-bottom: 5px;
+
+  @media ($tablet-widths) {
+    background-color: #ffffff;
+    height: 105px;
+    padding-bottom: 5px;
+  }
 }
 
 .header__wrapper {
+  @media ($tablet-widths) {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   @include flex();
+  }
 }
 
 .header__top {
-  height: 45px;
+  height: 80px;
   background-color: #242424;
+
+  @media ($tablet-widths) {
+  height: 45px;
   @include flex();
+  }
 }
 
 .header__bottom {
@@ -22,16 +34,25 @@
 }
 
 .header__select {
+  min-width: 100px;
+
+  @media ($tablet-widths) {
   min-width: 180px;
+  }
 }
 
 .header__select-icon {
+  display: inline-block;
+  padding: 12px 7px 15px 35px;
+
+  @media ($tablet-widths) {
   display: inline-block;
   padding: 20px 25px 20px 58px;
   border-left: 1px solid #eeeeee;
     &:last-child{
     border-right: 1px solid #eeeeee;
     }
+  }
 }
 
 .header__icon-like,

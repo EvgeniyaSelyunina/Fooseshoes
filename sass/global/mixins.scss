@@ -2,3 +2,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+@mixin container-fluid() {
+  width: 100%;
+
+  @media ($desktop-widths) {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}

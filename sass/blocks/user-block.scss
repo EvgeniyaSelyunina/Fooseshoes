@@ -1,8 +1,17 @@
 .user-block {
+  @media ($mobile-widths-only) {
+  position: absolute;
+  width: 80px;
+  top: 85px;
+  left: 230px;
+  }
+
+  @media ($tablet-widths) {
   width: 155px;
   padding: 11px 18px;
   border-left: 0.5px solid #7e7e7e;
   border-right: 1px solid #7e7e7e;
+  }
 }
 
 .user-block__link {

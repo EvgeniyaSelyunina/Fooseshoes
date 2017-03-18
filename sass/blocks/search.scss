@@ -1,10 +1,21 @@
 .search {
-  position: relative;
-  width: 200px;
+  @media ($mobile-widths-only) {
+  position: absolute;
+  width: 80px;
   height: 30px;
-  margin-left: 440px;
   padding: 11px 0px;
-  margin-right: 21px;
+  top: 30px;
+  left: 225px;
+  }
+
+  @media ($tablet-widths) {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin-left: 440px;
+    margin-right: 21px;
+    padding: 11px 0px;
+  }
 }
 
 .search__entry {
@@ -22,7 +33,7 @@
   z-index: 2;
 }
 .search__entry:focus {
-  width: 300px;
+  width: 290px;
   z-index: 1;
   border-bottom: 2px solid #F9F0DA;
 }
@@ -39,6 +50,10 @@
 }
 
 .search__btn::before {
+  @media ($mobile-widths-only) {
+    top: -20%;
+    left: 30%;
+  }
   content: "";
   position: absolute;
   top:40%;

@@ -6,6 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper-page">
     <header class="header">
       <div class="header__top">
         <div class="header__wrapper">
@@ -23,7 +24,10 @@
       </div>
       <div class="header__bottom">
         <div class="header__wrapper">
-          <nav class="menu">
+          <nav class="menu menu--closed menu--nojs">
+            <button class="menu__toggle">
+              <span class="menu__burger"></span>
+            </button>
             <ul class="menu__list">
               <li class="menu__item menu__item--active">
                 <a class="menu__link menu__link--active">Home</a>
@@ -302,5 +306,6 @@
       </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>
