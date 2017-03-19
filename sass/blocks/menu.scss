@@ -1,6 +1,6 @@
 .menu {
   @media ($mobile-widths-only) {
-      display: none;
+
   }
   @media ($tablet-widths) {
   width: 580px;
@@ -10,33 +10,57 @@
 }
 
 .menu__toggle{
-  @media ($mobile-widths-only) {
-    display: block;
-  }
-  @media ($tablet-widths) {
-
-  }
-}
-
-.menu__toggle {
   display: block;
   position: relative;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
+  margin-left: 20px;
+  padding: 0px;
   width: 40px;
   height: 40px;
   border: none;
   cursor: pointer;
+  top: 10px;
+  transition: left .23s;
+
+  @media ($tablet-widths) {
+    display: none;
+  }
+  @media ($desktop-widths) {
+     display: none;
+  }
 }
 
-.menu__toggle:focus {
-  outline: none;
+.menu__burger {
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  right: 10px;
+  height: 4px;
+  background-color: $green;
+  transition: all .1s linear .23s;
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $green;
+  }
+  &::before {
+    top: -10px;
+  }
+  &::after {
+    bottom: -10px;
+  }
 }
-
-
 
 .menu__item {
+  @media ($mobile-widths-only) {
+      display: none;
+  }
   @media ($tablet-widths) {
   border-left: 1px solid #eeeeee;
   height: 65px;

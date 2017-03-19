@@ -11,6 +11,11 @@
 }
 
 .header__wrapper {
+  @media ($mobile-widths-only) {
+    width: 290px;
+    display: flex;
+  }
+
   @media ($tablet-widths) {
   width: 960px;
   margin: 0 auto;
@@ -24,17 +29,23 @@
   background-color: #242424;
 
   @media ($tablet-widths) {
-  height: 45px;
-  @include flex();
+    height: 45px;
+    @include flex();
   }
 }
 
 .header__bottom {
-  background-color: #ffffff;
+  @media ($tablet-widths) {
+    background-color: #ffffff;
+  }
 }
 
 .header__select {
-  min-width: 100px;
+  @media ($mobile-widths-only) {
+    min-width: 90px;
+    margin-left: 10%;
+    padding-top: 5px;
+  }
 
   @media ($tablet-widths) {
   min-width: 180px;
