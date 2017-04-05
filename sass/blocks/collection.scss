@@ -1,12 +1,19 @@
-.collection {
-  background-color: #2e2e2e;
+.collection__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   text-align: center;
   justify-content: space-between;
+  margin-top: 5px;
+  border-top: 11px solid #000000;
 }
+
 .collection__item {
   position: relative;
-  &--active::before {
+  width: 192px;
+  &--hover::before {
     content: "";
     position: absolute;
     width: 165px;
@@ -22,8 +29,8 @@
   content: "";
   position: relative;
   height: 6px;
-  top: -86px;
-  left: 0px;
+  top: -85px;
+  left: 5px;
   display: block;
   border-right: 2px solid #2e2e2e;
 }
@@ -32,45 +39,40 @@
   border: none;
 }
 
-.collection__list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  margin-top: 5px;
-  border-top: 11px solid #000000;
-}
-
 .collection__link {
-  display: inline-block;
+  display: block;
   color: #979797;
   font-size: 14px;
   text-decoration: none;
   padding: 13px 0px;
-  padding-left: 48px;
+  padding-left: 0px;
   font-size: 18px;
-  &--active{
-    color: #ffffff;
-  }
   &:hover {
-    color: #ffffff;
+    .collection__title {
+      color: #ffffff;
+    }
+    .collection__description {
+      color: #adadad;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 176px;
+      height: 4px;
+      top: -8px;
+      left: 10px;
+      display: block;
+      border-top: 5px solid #57c5a0;
+    }
   }
 }
 
-.collection__link:last-child {
-  padding-right: 45px;
+.collection__title {
+  display: block;
 }
 
 .collection__description {
+  display: block;
   color: #6e6e6e;
   font-size: 12px;
-  &--active{
-    color: #adadad;
-  }
-  &:hover {
-    color: #adadad;
-  }
 }

@@ -1,12 +1,9 @@
 .header {
   position: relative;
-  height: 140px;
   background-color: #ffffff;
 
   @media ($tablet-widths) {
     background-color: #ffffff;
-    height: 105px;
-    padding-bottom: 5px;
   }
 }
 
@@ -25,11 +22,9 @@
 }
 
 .header__top {
-  height: 80px;
   background-color: #242424;
 
   @media ($tablet-widths) {
-    height: 45px;
     @include flex();
   }
 }
@@ -66,11 +61,6 @@
   }
 }
 
-.header__icon-like,
-.header__icon-basket {
-  display: inline-block;
-}
-
 .header__select-like,
 .header__select-basket {
   color: #ffffff;
@@ -94,10 +84,23 @@
       top:4px;
       left:-26px;
      }
+  &:hover {
+    background-color: #57c5a0;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      background: url("../img/star_hover.png");
+      width: 16px;
+      height: 16px;
+      top:4px;
+      left:-26px;
+    }
+  }
 }
 
 .header__select-basket {
-  background-color: #57c5a0;
+  background-color: #adadad;
   padding: 5px 8px;
   position: relative;
   &::before {
@@ -110,4 +113,17 @@
     top:8px;
     left:-27px;
    }
+  &:hover {
+    background-color: #57c5a0;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      background: url("../img/cart_icon.png");
+      width: 16px;
+      height: 16px;
+      top:5.5px;
+      left:-27px;
+    }
+  }
 }

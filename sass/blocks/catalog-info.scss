@@ -51,14 +51,11 @@
   font-weight: bold;
 }
 
-.catalog-info__headline {
-  font-weight: bold;
-  padding-left: 55px;
-}
-
 .catalog-info__link {
   text-decoration: none;
   color: #242424;
+  font-weight: bold;
+  padding-left: 55px;
   &:hover {
     color: $green;
   }

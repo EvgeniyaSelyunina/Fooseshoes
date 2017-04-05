@@ -9,10 +9,6 @@
   font-size: 22px;
 }
 
-.product-filters__menu {
-  display: block;
-}
-
 .product-filters__list {
   padding: 0px;
   list-style: none;
@@ -22,10 +18,8 @@
   position: relative;
   display: inline-block;
   font-size: 18px;
-  width: 220px;
-  background-color: $dark;
-  padding: 18px 0px;
-  margin-left: 18px;
+  padding: 22px 0px;
+  padding-bottom: 38px;
   &:hover ul {
     display:block;
   }
@@ -35,7 +29,9 @@
   position: relative;
   color: #ffffff;
   text-decoration: none;
-  padding: 12px 63px;
+  padding: 20px 82px;
+  margin-left: 20px;
+  background-color: $dark;
   &::after {
     position: absolute;
     content: "";
@@ -44,9 +40,21 @@
     width: 14px;
     height: 14px;
     font-size: 24px;
-    top:17px;
-    left:165px;
+    top: 24px;
+    left: 178px;
     transition: all .4s ease;
+  }
+  &--two {
+    padding: 20px 67px;
+    &::after {
+      left: 187px;
+    }
+  }
+  &--three {
+    padding: 20px 90px;
+    &::after {
+      left: 183px;
+    }
   }
   &:hover {
     &::after {
@@ -60,7 +68,7 @@
   width: 220px;
   position: absolute;
   top: 85px;
-  left: -40px;;
+  left: -19px;;
   z-index: 1;
   list-style:none;
   font-size: 16px;
@@ -87,9 +95,6 @@
   text-decoration: none;
   text-align: left;
   padding-left: 28px;
-  &--active {
-    background-color: #57c5a0;
-  }
   &:hover {
     background-color: #57c5a0;
   }

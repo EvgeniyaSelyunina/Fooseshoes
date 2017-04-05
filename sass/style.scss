@@ -17,7 +17,7 @@
 @import "blocks/catalog.scss";
 @import "blocks/catalog-info.scss";
 @import "blocks/footer.scss";
-@import "blocks/widgets.scss";
+@import "blocks/widgets-wrapper.scss";
 @import "blocks/subscription.scss";
 @import "blocks/widget.scss";
 @import "blocks/footer-menu.scss";
@@ -42,14 +42,14 @@ img {
   display: block;
 }
 
-.wrapper-page {
-  @include container-fluid();
-}
-
 .wrapper {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.inner {
+  @include container-fluid();
 }

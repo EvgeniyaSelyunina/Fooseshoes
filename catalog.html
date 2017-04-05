@@ -10,7 +10,7 @@
       <div class="header__top">
         <div class="header__wrapper">
           <div class="logo">
-            <a class="logo__link" href="#"><img src="img/logo.png" alt="Fooseshoes" width="160" height="26"></a>
+            <a class="logo__link" href="index.html"><img src="img/logo.png" alt="Fooseshoes" width="160" height="26"></a>
           </div>
           <form class="search" action="" method="get">
             <input class="search__entry" type="search" placeholder="Искать здесь...">
@@ -61,7 +61,7 @@
         <div class="promo-page promo-page--other">
           <div class="promo-page__line">
             <div class="promo-page__price">$145.99</div>
-            <h1 class="promo-page__title promo-page__title--other">Pink Shoes<br>2013 Collection</h1>
+            <div class="promo-page__title promo-page__title--other">Pink Shoes<br>2013 Collection</div>
           </div>
           <p class="promo-page__description promo-page__description--other">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
         </div>
@@ -70,7 +70,6 @@
     <div class="product-filters">
       <div class="wrapper">
         <span class="product-filters__title">Shop by</span>
-        <nav class="product-filters__menu">
           <ul class="product-filters__list">
             <li class="product-filters__item">
               <a class="product-filters__link" href="#">Brands</a>
@@ -83,7 +82,7 @@
               </ul>
             </li>
             <li class="product-filters__item">
-              <a class="product-filters__link" href="#">Categories</a>
+              <a class="product-filters__link product-filters__link--two" href="#">Categories</a>
               <ul class="product-filters__submenu">
                 <li class="product-filters__child"><a class="product-filters__child-link" href="#">Buffalo Decollete</a></li>
                 <li class="product-filters__child"><a class="product-filters__child-link" href="#">Even&Odd</a></li>
@@ -93,7 +92,7 @@
               </ul>
             </li>
             <li class="product-filters__item">
-              <a class="product-filters__link" href="#">Price</a>
+              <a class="product-filters__link product-filters__link--three" href="#">Price</a>
               <ul class="product-filters__submenu">
                 <li class="product-filters__child"><a class="product-filters__child-link" href="#">Buffalo Decollete</a></li>
                 <li class="product-filters__child"><a class="product-filters__child-link" href="#">Even&Odd</a></li>
@@ -103,129 +102,160 @@
               </ul>
             </li>
           </ul>
-        </nav>
       </div>
     </div>
     <div class="catalog">
     <div class="catalog-list">
       <div class="catalog-list__top">
         <div class="catalog-list__page">
-          <div class="catalog-list__title-main">All Rroducts</div>
-          <div class="catalog-list__nav">Home > All Products</div>
+          <h1 class="catalog-list__title-main">All Rroducts</h1>
+          <ul class="catalog-list__nav">
+            <li class="catalog-list__nav-item"><a class="catalog-list__link-nav" href="index.html">Home <span class="catalog-list__rd">&gt;</span></a></li>
+            <li class="catalog-list__nav-item"><a class="catalog-list__link-nav" href="#">All Products</a></li>
+          </ul>
         </div>
         <div class="catalog-list__sort">
           <div class="catalog-list__sort-name">View as</div>
-          <a class="catalog-list__view" href="#"><img class="catalog-list__img" src="img/icon_table.png" alt="view-table" width="16" height="14"></a>
-          <a class="catalog-list__view" href="#"><img class="catalog-list__img" src="img/icon_line.png" alt="view-line" width="16" height="14"></a>
-          <div class="catalog-list__sorting"><a class="catalog-list__sort-link" href="#">Sort aiphabetically</a></div>
+          <a class="catalog-list__view catalog-list__view--table" href="#"></a>
+          <a class="catalog-list__view catalog-list__view--line" href="#"></a>
+          <a class="catalog-list__sort-link" href="#">Sort aiphabetically</a>
         </div>
       </div>
       <div class="catalog-list__items catalog-list__items--row">
         <div class="catalog-list__item catalog-list__item--indent">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
-            </a>
-            <figcaption class="catalog-list__description">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
               <div class="catalog-list__price">$145.99</div>
-              <div class="catalog-list__title">Even&Odd</div>
-            </figcaption>
-          </figure>
+              <div class="catalog-list__title" href="#">Even&amp;Odd</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
+        </div>
+        <div class="catalog-list__item catalog-list__item--sticker-sale">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
+              <div class="catalog-list__price">$145.99</div>
+              <div class="catalog-list__title" href="#">Even&amp;Odd</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
         </div>
         <div class="catalog-list__item">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_two.jpg" alt="two" width="300" height="270">
-            </a>
-            <div class="catalog-list__sticker">ON SALE!</div>
-            <figcaption class="catalog-list__description catalog-list__description--none">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
               <div class="catalog-list__price">$145.99</div>
-              <div class="catalog-list__title">Even&Odd</div>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="catalog-list__item">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_three.jpg" alt="three" width="300" height="270">
-            </a>
-            <figcaption class="catalog-list__description catalog-list__description--none">
-              <div class="catalog-list__price">$145.99</div>
-              <div class="catalog-list__title">Buffalo Decollete</div>
-            </figcaption>
-          </figure>
+              <div class="catalog-list__title" href="#">Buffalo Decollete</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
         </div>
         <div class="catalog-list__item catalog-list__item--indent">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_four.jpg" alt="four" width="300" height="220">
-            </a>
-            <figcaption class="catalog-list__description">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
               <div class="catalog-list__price">$145.99</div>
-              <div class="catalog-list__btns">
-                <a class="catalog-list__btn" href="#"><img class="catalog-list__img" src="img/eye_icon.png" alt="" width="16" height="10"></a>
-                <a class="catalog-list__btn" href="#"><img class="catalog-list__img" src="img/star_icon.png" alt="" width="16" height="16"></a>
-                <a class="catalog-list__btn" href="#"><img class="catalog-list__img" src="img/share_icon.png" alt="" width="16" height="13"></a>
-                <a class="catalog-list__btn" href="#"><img class="catalog-list__img" src="img/cart_icon.png" alt="" width="16" height="15"></a>
-              </div>
-            </figcaption>
-          </figure>
+              <div class="catalog-list__title" href="#">Even&amp;Odd</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
         </div>
         <div class="catalog-list__item">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_five.jpg" alt="five" width="300" height="270">
-            </a>
-            <figcaption class="catalog-list__description catalog-list__description--none">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
               <div class="catalog-list__price">$145.99</div>
-            </figcaption>
-          </figure>
+              <div class="catalog-list__title" href="#">Even&amp;Odd</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
+        </div>
+        <div class="catalog-list__item catalog-list__item--sticker-stock">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
+              <div class="catalog-list__price">$145.99</div>
+              <div class="catalog-list__title" href="#">Buffalo Decollete</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
         </div>
         <div class="catalog-list__item">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_six.jpg" alt="six" width="300" height="270">
-            </a>
-            <div class="catalog-list__sticker catalog-list__sticker--stock">OUT OF STOCK</div>
-            <figcaption class="catalog-list__description catalog-list__description--none">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
               <div class="catalog-list__price">$145.99</div>
-              <div class="catalog-list__title">Buffalo Decollete</div>
-            </figcaption>
-          </figure>
+              <div class="catalog-list__title" href="#">Even&amp;Odd</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
+        </div>
+        <div class="catalog-list__item catalog-list__item--sticker-sale">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
+              <div class="catalog-list__price">$145.99</div>
+              <div class="catalog-list__title" href="#">Even&amp;Odd</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
         </div>
         <div class="catalog-list__item">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
-            </a>
-            <figcaption class="catalog-list__description">
+          <a class="catalog-list__link" href="#">
+            <img class="catalog-list__img" src="img/product_one.jpg" alt="one" width="300" height="220">
+            <div class="catalog-list__description">
               <div class="catalog-list__price">$145.99</div>
-              <div class="catalog-list__title">Even&Odd</div>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="catalog-list__item">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_two.jpg" alt="two" width="300" height="270">
-            </a>
-            <div class="catalog-list__sticker">ON SALE!</div>
-            <figcaption class="catalog-list__description catalog-list__description--none">
-              <div class="catalog-list__price">$145.99</div>
-              <div class="catalog-list__title">Even&Odd</div>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="catalog-list__item">
-          <figure class="catalog-list__photo">
-            <a class="catalog-list__link" href="#">
-              <img class="catalog-list__img" src="img/product_three.jpg" alt="three" width="300" height="270">
-            </a>
-            <figcaption class="catalog-list__description catalog-list__description--none">
-              <div class="catalog-list__price">$145.99</div>
-              <div class="catalog-list__title">Buffalo Decollete</div>
-            </figcaption>
-          </figure>
+              <div class="catalog-list__title" href="#">Buffalo Decollete</div>
+            </div>
+          </a>
+          <div class="catalog-list__btns">
+            <a class="catalog-list__btn catalog-list__btn--eye" href="#">view</a>
+            <a class="catalog-list__btn catalog-list__btn--star" href="#">star</a>
+            <a class="catalog-list__btn catalog-list__btn--share" href="#">share</a>
+            <a class="catalog-list__btn catalog-list__btn--cart" href="#">cart</a>
+          </div>
         </div>
       </div>
     </div>
@@ -258,41 +288,39 @@
     </div>
     <footer class="footer">
       <div class="footer__top">
-        <div class="widgets">
-          <div class="wrapper">
-            <div class="widget widget--text">
-              <div class="widget__title">Text widget</div>
-              <p class="widget__text">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <div class="widgets-wrapper">
+          <div class="widget widget--text">
+            <h3 class="widget__title">Text widget</h3>
+            <p class="widget__text">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          </div>
+          <div class="widget widget--twitter">
+            <h3 class="widget__title">Twitter widget</h3>
+            <div class="widget__post">
+              <p class="widget__message"><a class="widget__link" href="#">@ericafustero</a> Why thank you. Your work looks awesome by the way!<a class="widget__link" href="#">@treemelody</a></p>
+              <div class="widget__data">19 days ago</div>
             </div>
-            <div class="widget widget--twitter">
-              <div class="widget__title">Twitter widget</div>
-              <div class="widget__post">
-                <p class="widget__message"><span class="widget__link">@ericafustero</span> Why thank you. Your work looks awesome by the way! <span class="widget__link">@treemelody</span></p>
-                <div class="widget__data">19 days ago</div>
-              </div>
-              <div class="widget__post">
-                <p class="widget__message"><span class="widget__link">@roymarvelous</span> You can seek a refund through TF if it is not as advertised - but it is :)</p>
-                <div class="widget__data">21 days ago</div>
-              </div>
+            <div class="widget__post">
+              <p class="widget__message"><a class="widget__link" href="#">@roymarvelous</a> You can seek a refund through TF if it is not as advertised - but it is :)</p>
+              <div class="widget__data">21 days ago</div>
             </div>
-            <div class="widget widget--flickr">
-              <div class="widget__title widget__title--flickr">Flickr widget</div>
-              <a class="widget__link" href="#"><img class="widget__picture" src="img/flickr_img.png" alt="flickr" width="244" height="121"></a>
-            </div>
+          </div>
+          <div class="widget widget--flickr">
+            <h3 class="widget__title widget__title--flickr">Flickr widget</h3>
+            <a class="widget__link" href="#"><img class="widget__picture" src="img/flickr_img.png" alt="flickr" width="244" height="121"></a>
           </div>
         </div>
         <div class="subscription">
           <div class="wrapper">
             <form class="subscription__newsletter">
-              <input class="subscription__input" name="s" placeholder="Enter email for newsletter" type="search" required>
+              <input class="subscription__input" name="s" placeholder="Enter email for newsletter" type="search">
               <button class="subscription__btn" type="submit"></button>
             </form>
             <div class="subscription__social-networks">
-              <a class="subscription__social" href="#"><img class="subscription__img" src="img/facebook.png" alt="fb" width="10" height="20"></a>
-              <a class="subscription__social" href="#"><img class="subscription__img" src="img/twitter.png" alt="twitter" width="20" height="17"></a>
-              <a class="subscription__social" href="#"><img class="subscription__img" src="img/google.png" alt="google" width="20" height="17"></a>
-              <a class="subscription__social" href="#"><img class="subscription__img" src="img/leakedin.png" alt="leakedin" width="18" height="20"></a>
-              <a class="subscription__social" href="#"><img class="subscription__img" src="img/flickr.png" alt="flickr" width="20" height="8"></a>
+              <a class="subscription__social subscription__social--fb" href="#">fb</a>
+              <a class="subscription__social subscription__social--tw" href="#">tw</a>
+              <a class="subscription__social subscription__social--google" href="#">google</a>
+              <a class="subscription__social subscription__social--in" href="#">in</a>
+              <a class="subscription__social subscription__social--flickr" href="#">flickr</a>
             </div>
           </div>
         </div>
@@ -302,27 +330,25 @@
         <div class="copyright">
           <div class="copyright__text">Copyright © Fooseshoes 2013.<br>Designed by EnzoLiVolti.</div>
         </div>
-        <div class="footer-menu">
-          <nav class="footer-menu__nav">
-              <ul class="footer-menu__list">
-                <li class="footer-menu__item">
-                  <a class="footer-menu__link" href="#">Home /</a>
-                </li>
-                <li class="footer-menu__item">
-                  <a class="footer-menu__link" href="#">Support /</a>
-                </li>
-                <li class="footer-menu__item">
-                  <a class="footer-menu__link" href="#">Terms and Conditions /</a>
-                </li>
-                <li class="footer-menu__item"v>
-                  <a class="footer-menu__link" href="#">Faqs /</a>
-                </li>
-                <li class="footer-menu__item">
-                  <a class="footer-menu__link" href="#">Contact us</a>
-                </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="footer-menu">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Home</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Support</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Terms and Conditions</a>
+              </li>
+              <li class="footer-menu__item"v>
+                <a class="footer-menu__link" href="#">Faqs</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">Contact us</a>
+              </li>
+          </ul>
+        </nav>
       </div>
       </div>
     </footer>
