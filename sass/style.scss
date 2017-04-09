@@ -1,3 +1,4 @@
+@import "swiper.min.scss";
 @import "global/normalize.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
@@ -43,11 +44,14 @@ img {
 }
 
 .wrapper {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0 10px;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  @media ($tablet-widths) {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .inner {

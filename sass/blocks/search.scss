@@ -19,6 +19,27 @@
 }
 
 .search__entry {
+  @media ($mobile-widths-only) {
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    &:focus {
+      width: 290px;
+      z-index: 2;
+      background-color: white;
+      color: black;
+      top: 50px;
+      right: 0;
+      border-bottom: 2px solid #d6d3ce;
+    }
+  }
+  @media ($tablet-widths) {
   height: 42px;
   width: 0;
   padding: 0 42px 0 15px;
@@ -31,33 +52,49 @@
   top: 0;
   right: 0;
   z-index: 2;
-}
-.search__entry:focus {
-  width: 290px;
-  z-index: 1;
-  border-bottom: 2px solid #F9F0DA;
+    &:focus {
+      width: 290px;
+      z-index: 1;
+      border-bottom: 2px solid #F9F0DA;
+    }
+  }
 }
 
 .search__btn {
+  @media ($mobile-widths-only) {
+    background: #242424;
+    border: none;
+    height: 43px;
+    width: 43px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 28%;
+      content: url("../img/icon-search.png");
+      cursor: pointer;
+    }
+  }
+  @media ($tablet-widths) {
   background: #242424;
   border: none;
-  height: 40px;
-  width: 40px;
+  height: 43px;
+  width: 43px;
   position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;
-}
-
-.search__btn::before {
-  @media ($mobile-widths-only) {
-    top: -20%;
-    left: 30%;
+  &::before {
+    content: "";
+    position: absolute;
+    top:40%;
+    left:30%;
+    content: url("../img/icon-search.png");
+    cursor: pointer;
   }
-  content: "";
-  position: absolute;
-  top:40%;
-  left:30%;
-  content: url("../img/icon-search.png");
-  cursor: pointer;
+  }
 }

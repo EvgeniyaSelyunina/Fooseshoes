@@ -1,9 +1,11 @@
 .logo {
-  padding: 13px 0px;
-  padding-left: 26%;
+  padding: 25px 0px;
+  padding-bottom: 0px;
+  padding-left: 30%;
 
   @media ($tablet-widths) {
-  width: 160px;
-  padding: 11px 0px;
+    width: 160px;
+    padding: 11px 0px;
+    padding-left: 1%;
   }
 }

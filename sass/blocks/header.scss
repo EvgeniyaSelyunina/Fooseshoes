@@ -14,7 +14,7 @@
   }
 
   @media ($tablet-widths) {
-  width: 960px;
+  width: 961px;
   margin: 0 auto;
   padding: 0 10px;
   @include flex();
@@ -23,9 +23,10 @@
 
 .header__top {
   background-color: #242424;
-
+  padding-bottom: 21px;
   @media ($tablet-widths) {
     @include flex();
+    padding-bottom: 0px;
   }
 }
 
@@ -37,8 +38,8 @@
 
 .header__select {
   @media ($mobile-widths-only) {
-    min-width: 90px;
-    margin-left: 10%;
+    min-width: 95px;
+    margin-left: 5%;
     padding-top: 5px;
   }
 
@@ -49,7 +50,7 @@
 
 .header__select-icon {
   display: inline-block;
-  padding: 12px 7px 15px 35px;
+  padding: 12px 10px 15px 40px;
 
   @media ($tablet-widths) {
   display: inline-block;

@@ -58,12 +58,39 @@
     </header>
     <div class="promo">
       <div class="wrapper">
-        <div class="promo-page promo-page--other">
-          <div class="promo-page__line">
-            <div class="promo-page__price">$145.99</div>
-            <div class="promo-page__title promo-page__title--other">Pink Shoes<br>2013 Collection</div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="promo-page promo-page--other">
+                <div class="promo-page__line">
+                  <div class="promo-page__price">$145.99</div>
+                  <div class="promo-page__title promo-page__title--other">Pink Shoes 2013 Collection</div>
+                </div>
+                <p class="promo-page__description promo-page__description--other">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="promo-page promo-page--other">
+                <div class="promo-page__line">
+                  <div class="promo-page__price">$176.99</div>
+                  <div class="promo-page__title promo-page__title--other">Anna Field 2013 Collection</div>
+                </div>
+                <p class="promo-page__description promo-page__description--other">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="promo-page promo-page--other">
+                <div class="promo-page__line">
+                  <div class="promo-page__price">$200.99</div>
+                  <div class="promo-page__title promo-page__title--other">Mellow Yellow 2013 Collection</div>
+                </div>
+                <p class="promo-page__description promo-page__description--other">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
+              </div>
+            </div>
           </div>
-          <p class="promo-page__description promo-page__description--other">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
@@ -352,5 +379,16 @@
       </div>
       </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          pagination: '.swiper-pagination',
+          paginationType: 'progress'
+      });
+    </script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
