@@ -1,4 +1,12 @@
 .widgets-wrapper {
+  @media ($mobile-widths-only) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #1c1c1c;
+  }
+  @media ($tablet-widths) {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
@@ -6,4 +14,5 @@
   justify-content: space-between;
   border-bottom: 1px solid #1c1c1c;
   padding: 30px 0px;
+  }
 }

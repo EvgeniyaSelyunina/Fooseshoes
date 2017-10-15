@@ -1,4 +1,15 @@
 .promo {
+  @media ($mobile-widths-only) {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: #5a5f64;
+    background-position: center;
+    background-image: url("../img/promo.jpg");
+  }
+  @media ($tablet-widths) {
   width: 100%;
   height: 262px;
   background-size: cover;
@@ -7,4 +18,5 @@
   background-color: #5a5f64;
   background-position: center;
   background-image: url("../img/promo.jpg");
+  }
 }

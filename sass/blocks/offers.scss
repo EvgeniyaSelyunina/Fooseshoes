@@ -1,13 +1,28 @@
 .offers {
+  @media ($mobile-widths-only) {
+    padding: 28px 10px;
+  }
   background-color: #242424;
 }
 
 .offers__item {
+  @media ($mobile-widths-only) {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 0px 14px 0px;
+    &:last-child {
+      padding: 0px;
+    }
+  }
   position: relative;
   padding: 25px 0px;
 }
 
 .offers__link{
+  @media ($mobile-widths-only) {
+    width: 290px;
+    height: 170px;
+  }
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +44,10 @@
   transform: scale(1);
   transition: all 0.4s ease-in-out;
     &:hover {
+      @media ($mobile-widths-only) {
+        transform: scale(1);
+        transition: all 0.4s ease-in-out;
+      }
       transform: scale(1.1);
       .offers__name {
           background-color: #ebe7df;
@@ -39,6 +58,13 @@
 }
 
 .offers__name {
+  @media ($mobile-widths-only) {
+    min-width: 160px;
+    padding: 0px 22px;
+    top: 40px;
+    left: 45px;
+    font-size: 20px;
+  }
   position: absolute;
   display: block;
   background-color: #393939;
@@ -52,6 +78,9 @@
   top: 46px;
   left: 35px;
   &--long {
-    left: 35px;
+    @media ($mobile-widths-only) {
+      left: 40px;
+    }
+    left: 17px;
   }
 }

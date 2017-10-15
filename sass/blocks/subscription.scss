@@ -1,14 +1,27 @@
 .subscription {
+  @media ($mobile-widths-only) {
+    padding: 24px 0px;
+  }
   padding: 30px 0px;
 }
 
 .subscription__newsletter {
-  position: relative;
-  width: 252px;
-  margin-left: 40px;
+  @media ($mobile-widths-only) {
+    position: relative;
+    width: 275px;
+    margin: 0 auto;
+  }
+  @media ($tablet-widths) {
+    position: relative;
+    width: 252px;
+    margin-left: 40px;
+  }
 }
 
 .subscription__input {
+  @media ($mobile-widths-only) {
+    height: 44px;
+  }
   position: relative;
   width: 100%;
   height: 35px;
@@ -16,9 +29,14 @@
   background-color: #2e2e2e;
   text-decoration: none;
   border: 0;
+  color: white;
 }
 
 .subscription__btn {
+  @media ($mobile-widths-only) {
+    height: 44px;
+    width: 36px;
+  }
   position: absolute;
   top: 0px;
   right: 0px;
@@ -29,6 +47,10 @@
   background-color: #7d7d7d;
   cursor: pointer;
   &::before {
+    @media ($mobile-widths-only) {
+      top: 17px;
+      left:14px;
+    }
     position: absolute;
     content: "";
     display: block;
@@ -44,8 +66,13 @@
 }
 
 .subscription__social-networks {
-  @include flex();
-  margin-right: 40px;
+  @media ($mobile-widths-only) {
+  margin-top: 24px;
+  }
+  @media ($tablet-widths) {
+    @include flex();
+    margin-right: 40px;
+  }
 }
 
 .sprite {
@@ -85,6 +112,10 @@
 }
 
 .subscription__social {
+  @media ($mobile-widths-only) {
+    width: 38px;
+    height: 38px;
+  }
   position: relative;
   display: inline-block;
   vertical-align: top;

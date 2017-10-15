@@ -1,4 +1,9 @@
 .copyright {
+  @media ($mobile-widths-only) {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0px;
+  }
   padding: 20px 0px;
   text-align: left;
 }

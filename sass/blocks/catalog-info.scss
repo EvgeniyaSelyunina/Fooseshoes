@@ -1,22 +1,52 @@
 .catalog-info {
+  @media ($mobile-widths-only) {
+    width: 100%;
+    margin: 0 auto;
+  }
+  @media ($tablet-widths) {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
   text-align: left;
   margin-bottom: 30px;
+  }
 }
 
 .catalog-info__delivery,
 .catalog-info__reviews {
+  @media ($mobile-widths-only) {
+    padding: 16px 12px 20px 16px;
+    background-color: #dfdbd4;
+    border-bottom: 1px solid #bcb5a7;
+  }
+  @media ($tablet-widths) {
   width: 191px;
   padding: 25px 23px 20px 18px;
   background-color: #dfdbd4;
+  }
 }
 
 .catalog-info__news {
+  @media ($mobile-widths-only) {
+    text-align: left;
+    padding: 14px 12px 20px 18px;
+    background-color: #dfdbd4;
+  }
+  @media ($tablet-widths) {
   width: 410px;
-  padding: 25px 30px 20px 18px;
+  padding: 25px 20px 20px 18px;
   background-color: #dfdbd4;
+  }
 }
 
 .catalog-info__title {
+  @media ($mobile-widths-only) {
+    &--news {
+      text-align: center;
+    }
+  }
   text-transform: uppercase;
   margin: 0px;
 }
@@ -56,6 +86,7 @@
   color: #242424;
   font-weight: bold;
   padding-left: 55px;
+  transition: all 0.4s ease-in-out;  
   &:hover {
     color: $green;
   }

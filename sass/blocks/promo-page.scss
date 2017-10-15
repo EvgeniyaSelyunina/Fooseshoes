@@ -3,6 +3,10 @@
     position: relative;
     text-align: center;
     padding: 0px 0px;
+    &--other{
+      width: 100%;
+      padding: 0px 0px;
+    }
   }
   @media ($tablet-widths) {
     width: 460px;
@@ -16,8 +20,10 @@
 }
 
 .promo-page__line {
-  @include flex();
-  align-items: center;
+  @media ($tablet-widths) {
+    @include flex();
+    align-items: center;
+  }
 }
 
 .promo-page__price {
@@ -42,12 +48,6 @@
     color: #ffffff;
     text-align: center;
     padding: 22px 0px;
-    transform: scale(1);
-    transition: all 0.4s ease-in-out;
-    &:hover {
-      transform: scale(1.1);
-      font-size: 14px;
-    }
   }
 }
 
@@ -95,7 +95,7 @@
   @media ($mobile-widths-only) {
     width: 162px;
     @include flex();
-    padding-left: 27%;
+    margin-left: 27%;
     margin-top: 62px;
   }
   @media ($tablet-widths) {

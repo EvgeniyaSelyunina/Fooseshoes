@@ -9,15 +9,13 @@
 
 .header__wrapper {
   @media ($mobile-widths-only) {
-    width: 290px;
     display: flex;
   }
 
   @media ($tablet-widths) {
-  width: 961px;
+  width: 960px;
   margin: 0 auto;
-  padding: 0 10px;
-  @include flex();
+  display: flex;
   }
 }
 
@@ -38,13 +36,12 @@
 
 .header__select {
   @media ($mobile-widths-only) {
-    min-width: 95px;
-    margin-left: 5%;
     padding-top: 5px;
+    margin-left: 5%;
   }
 
   @media ($tablet-widths) {
-  min-width: 180px;
+    margin-left: 16.7%;  
   }
 }
 

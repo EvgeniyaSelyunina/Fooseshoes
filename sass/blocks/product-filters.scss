@@ -1,31 +1,81 @@
 .product-filters {
+  @media ($mobile-widths-only) {
+    padding: 15px 0px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding-bottom: 0px;
+  }
+  @media ($tablet-widths) {
   height: 90px;
   background-color: #2e2e2e;
   color: #ffffff;
+  }
 }
 
 .product-filters__title {
+  @media ($mobile-widths-only) {
+    padding: 23px 0px;
+    font-size: 23px;
+  }
+  @media ($tablet-widths) {
   padding: 31px 0px 0px 60px;
   font-size: 22px;
+  }
 }
 
 .product-filters__list {
+  @media ($mobile-widths-only) {
+    text-align: left;
+    padding-bottom: 7px;
+    background-color: $dark;
+  }
   padding: 0px;
   list-style: none;
 }
 
 .product-filters__item {
+  @media ($mobile-widths-only) {
+    position: relative;
+    padding-top: 21px;
+    background-color: $dark;
+    font-size: 18px;
+    border-bottom: 2px solid $dark;
+    &:last-child {
+      margin-bottom: 17px;
+    }
+    &:hover ul {
+      display:block;
+    }
+    &:hover {
+      border-bottom: 2px solid #2e2e2e;
+    }
+  }
+  @media ($tablet-widths) {
   position: relative;
   display: inline-block;
   font-size: 18px;
   padding: 22px 0px;
   padding-bottom: 38px;
-  &:hover ul {
-    display:block;
+    &:hover ul {
+      display:block;
+    }
   }
 }
 
 .product-filters__link {
+  @media ($mobile-widths-only) {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 22px 18px;
+    &--two {
+      padding: 22px 18px;
+    }
+    &--three {
+      padding: 22px 18px;
+    }
+  }
+  @media ($tablet-widths) {
   position: relative;
   color: #ffffff;
   text-decoration: none;
@@ -61,18 +111,27 @@
       transform: rotate(180deg);
     }
   }
+  }
 }
 
 .product-filters__submenu {
+  @media ($mobile-widths-only) {
+    top: 46px;
+    left: 85px;
+    font-size: 14px;
+    width: 100%;
+    border-top: 2px solid #2e2e2e;
+  }
   display: none;
   width: 220px;
   position: absolute;
   top: 85px;
-  left: -19px;;
+  left: -19px;
   z-index: 1;
   list-style:none;
   font-size: 16px;
   line-height: 30px;
+  @media ($tablet-widths) {
   &:before {
 				content: '';
         display: block;
@@ -85,9 +144,13 @@
 	      border-right: 5px solid transparent;
 	      border-bottom: 8px solid $dark;
 			}
+  }
 }
 
 .product-filters__child-link {
+  @media ($mobile-widths-only) {
+    background-color: #2e2e2e;
+  }
   display: block;
   padding: 5px;
   color: #ffffff;
